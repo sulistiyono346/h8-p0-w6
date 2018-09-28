@@ -24,7 +24,7 @@ h1, h2{
 
 #page-header{
     /* background: #2e7297; */
-    background-image: url(place.jpg);
+    background-image: url("place.jpg");
     padding: 5px 0;
    
     /* border:1px solid Tomato hanya sebagai pembatas desain */
