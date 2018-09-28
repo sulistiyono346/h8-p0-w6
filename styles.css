@@ -2,6 +2,7 @@ body{
     font-family: Tahoma;
     color: #444;
     letter-spacing: 1px;
+    /* border:2px solid DodgerBluehanya sebagai pembatas desain */
 }
 
 h1, h2{
@@ -9,30 +10,42 @@ h1, h2{
 }
 
 #wrapper{
-    width: 90%;
-    max-width: 960px;
-    margin: 20px auto;
+    /* width: device-width; */
+    /* max-width: 1080px; */
+    margin:auto;
     border-radius: 6px;
     box-shadow: 0px 1px 6px rgba(0,0,0,0.2);
     box-sizing: border-box;
     padding: 0 0 20px;
     overflow: hidden;
     border: 1px solid lightgray;
+    /* border:1px solid Tomato hanya sebagai pembatas desain */
 }
 
-#page-banner{
-    background: #eee ;
-    padding: 10px 0;
+#page-header{
+    background: #2e7297;
+    padding: 5px 0;
+   
+    /* border:1px solid Tomato hanya sebagai pembatas desain */
 
 }
 
-#page-banner h1, #page-banner p{
+#page-header h1{
     width: 100%;
     text-align: center;
     margin: 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: #67bdeb;
 }
+#page-header p{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: #67bdeb;
 
-#page-banner input{
+}
+#page-header input{
     width: 90%;
     max-width: 300px;
     margin: 20px auto;
@@ -43,44 +56,39 @@ h1, h2{
     font-size: 16px;
     color: #444;
 }
-
-#wedding-list, #add-wedding, #tabbed-content{
+#wedding-list, #add-wedding{
     margin: 30px;
 }
-
-#wedding-list ul, #tabbed-content ul{
-    list-style-type: none;
+#wedding-list ul{
+    list-style-type: none; /* menghilangkan dot ul */
     padding: 0;
 }
-
 #wedding-list li{
-    padding: 20px;
+    padding: 12px;
     border-left: 5px solid #ddd;
     margin: 20px 10px;
 }
-
 #wedding-list li:hover{
-    border-color: #9361bf;
+    border-color: #2e7297; /*digunakan ketika mouse mengenai li akan berwarna biru*/
 }
-
 .delete{
     float: right;
-    background: #9361bf;
-    padding: 6px;
-    border-radius: 4px;
+    background: #2e7297;
+    padding: 5px;
+    border-radius: 3px;
     cursor: pointer;
     color: white;
 }
-
 .delete:hover{
     background: #333;
 }
-
 #add-wedding{
+    float: left;
     width: 400px;
     margin: 0 auto;
+    margin: 20px 30px;
+   
 }
-
 #add-wedding input{
     display: block;
     margin: 20px 0;
@@ -89,14 +97,13 @@ h1, h2{
     font-size: 16px;
     border-radius: 4px 0 0 4px;
     box-sizing: border-box;
-    width: 300px;
+    width: 240px;
     float: left;
     clear: both;
 }
-
 #add-wedding button{
-    border: 1px solid #9361bf;
-    background: #9361bf;
+    border: 1px solid #2e7297;
+    background: #2e7297;
     padding: 10px 20px;
     font-size: 16px;
     display: inline-block;
@@ -110,36 +117,20 @@ h1, h2{
     color: white;
 }
 
-#add-wedding:after{
-    content: '';
-    display: block;
-    clear: both;
-}
 
-#add-wedding #hide{
-  width: 30px;
-}
-
-#add-wedding label{
-  line-height: 52px;
-}
-
-#tabbed-content li{
+#page-footer{
+    border-top:5px solid #056090;
+    font-size: 10px;
     display: inline-block;
-    padding: 10px 14px;
-    background: #ddd;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-right: 10px;
-}
+    width: 100%;
+    background: #105479;
+    height:90px;
+    border-bottom:5px solid #032d44;
 
-#tabbed-content .panel{
-    display: none;
-    border: 1px solid #ddd;
-    padding: 0 10px;
-    border-radius: 4px;
 }
-
-#tabbed-content .panel.active{
-    display: block;
+#page-footer p{
+    margin-left: 20px;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
