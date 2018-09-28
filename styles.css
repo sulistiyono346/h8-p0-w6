@@ -31,16 +31,18 @@ h1, h2{
 }
 
 #page-header h1{
+    
     width: 100%;
     text-align: center;
-    margin: 10px 0;
+    margin: 7px 0;
     font-family: 'Times New Roman', Times, serif;
     color: #67bdeb;
 }
 #page-header p{
+    font-size: 12px;
     width: 100%;
     text-align: center;
-    margin: 10px 0;
+    margin: 7px 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
    color: #67bdeb;
 
